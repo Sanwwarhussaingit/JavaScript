@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+    <ul class="language">
+        <li>Javascript</li>
+    
+    </ul>
+    
+</body>
+<script>
+    function addlanguage(LangName)
+    {
+        const lival = document.createElement('li');
+        lival.innerHTML = `${LangName}`
+        lival.innerHTML = LangName
+
+        document.querySelector('.language').appendChild(lival)
+    }
+    addlanguage("11111111");
+    addlanguage("Hussain");
+    addlanguage("typescript");
+
+    function addoptlang(langName)
+    {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptlang("Java");
+
+
+
+
+    //Edit
+
+    const firstlang = document.querySelector("li:first-child")
+    // console.log(firstlang);
+    // firstlang.innerHTML = "java"
+
+    const newli= document.createElement('li')
+    newli.textContent = "Mojo"
+    firstlang.replaceWith(newli)
+
+    //edit
+    const secondlang = document. querySelector ("li:nth-child(2)")
+    secondlang.outerHTML ='<li>cpp<li>'
+
+
+    //remove
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+
+
+    
+
+</script>
+</html>

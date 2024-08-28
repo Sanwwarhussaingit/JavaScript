@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Sanwwar hussain</h1>
+
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+
+   setTimeout(function()
+    {
+        document.querySelector('h1').innerHTML = "Aman hussain"
+    },2000)
+
+    document.querySelector('#stop').addEventListener('click',function()
+    {
+        let text = document.createTextNode("time stop")
+        document.body.appendChild(text);
+        clearTimeout(clear);
+
+    },false)
+
+
+
+</script>
+
+
+</html>

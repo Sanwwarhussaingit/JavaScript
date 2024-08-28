@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Application </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            background-color: rgb(38, 143, 38);
+            padding: 30px;
+        }
+        .additems,h1{
+            margin: 20px;
+            padding: 5px;
+        }
+        #textbox{
+            width: 200px;
+            height: 20px;
+        }
+        #submit{
+            width: 80px;
+            height: 25px;
+            background-color: rgb(129, 127, 127);
+            color: rgb(225, 227, 228);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h2>ToDoList</h2>
+    </div>
+
+    <div class="additems">
+        <h1>Add Item</h1>
+        <input type="text" id="textbox" placeholder="Enter name">
+        <button onclick="add()">Add</button>
+    </div>
+
+
+    <ul class="item-container">
+
+
+    </ul>
+         
+</body>
+<script>
+
+   const textbox = document.querySelector('#textbox');
+   const itemContainer = document.querySelector('.item-container')
+   function add()
+   {
+        if(textbox.value === '')
+        {
+            alert("Pless enter data! ");
+        }
+        else{
+            const li=document.createElement('li');
+            li.innerHTML = textbox.value;
+            itemContainer.appendChild(li);
+          
+           
+            
+           
+           
+        }
+        textbox.value =''
+        delBtn.setAttribute('id')
+        function del(){
+                li.remove();
+            }
+    
+   }
+</script>
+</html>

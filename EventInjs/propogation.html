@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <div class="divclass">
+    <button class="btn">Button</button>
+    <a href="home.html">Home</a>
+    </div>
+ 
+    <script>
+        const div = document.querySelector('.divclass');
+        const btn = document.querySelector('.btn');
+        const a = document.querySelector("a");
+        // div.addEventListener('click',(e)=>{
+        //     // e.stopPropagation();
+        //     console.log('div');
+            
+        // });//true is parent to child, false: is child to parent 
+        // btn.addEventListener('click',(e)=>{
+           
+            // e.stopImmediatePropagation();
+            // console.log('btn 1');
+            // // body.style.backgroundColor= 'red'
+            
+        // });
+        a.addEventListener('click',(e)=>{
+
+            e.preventDefault();
+            console.log('anchor');
+            // body.style.backgroundColor= 'red'
+
+        });
+      
+        
+      
+
+    </script>
+</body>
+</html>

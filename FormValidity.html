@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <h2>Form validation</h2>
+    <input type="number" id="inputbox" min="100" max="200" required>
+    <button onclick="myFunction()">OK</button>
+    <p id="p">Result: </p>
+</body>
+<script>
+   function myFunction()
+   {
+    const inputValue = document.querySelector("#inputbox");
+    const p = document.getElementById("p");
+    if(!inputValue.checkValidity())
+    {
+        p.innerHTML = inputValue.validationMessage;
+
+    }
+    else{
+       p.innerHTML = "Input Ok";
+    }
+   }
+</script>
+</html>

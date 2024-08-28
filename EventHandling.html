@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid blue;
+            margin: 5px ;
+            background-color: antiquewhite;
+        }
+        body{
+            background-color: #414141;
+
+        }
+        #red{
+            background-color: red;
+            
+
+        }
+        
+        .black{
+            background-color: black;
+            border: 2px solid blueviolet;
+            height: 100px;
+            width: 100px;
+        }
+        .container{
+            border: 2px solid black;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="red">
+            <div class="black">black</div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("#red").addEventListener("click",function(e){
+        e.stopPropagation();
+        console.log(e.target.id);
+        if(e.target.className ==='red'){
+        
+            let removeit = e.target
+            removeit.remove();
+        }
+        // removeit.parentNode.removeChild(removeit)
+    },false)
+
+</script>
+</html>

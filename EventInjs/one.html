@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+    <style>
+        .Details
+        {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="Details">
+            <li id="Name" >Name: Sanwwar hussain</li>
+            <li>:Roll: 82264</li>
+            <li>College: VVIT </li>
+            <li>Course: BCA</li>
+
+        </ul>
+   </div>
+</body>
+<script>
+
+    document.getElementById('Details').addEventListener('click',function(e){
+
+        // console.log(e.target.chidlNode);
+
+        const rmovetit = e.target.parentNode
+
+        // rmovetit.remove();
+
+        rmovetit.parentNode.removeChild(rmovetit)
+
+    })
+
+  
+
+
+
+    
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addText('Yes')">Yes</button>
+    <button onclick="addText('No')">No</button>
+    <button onclick="addText('We dont know')">We dont know</button>
+    
+
+
+
+    <p id="p1">Add new paragragh  : </p>
+</body>
+
+
+<script>
+    function addText(text){
+
+        const newtext = document.createTextNode(text)
+
+        const getid = document.getElementById('p1')
+
+        getid.appendChild(newtext)
+    }
+</script>
+
+
+</html>

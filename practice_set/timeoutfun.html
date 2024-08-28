@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation with setInterval</title>
+    <style>
+        #animatedElement {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="animatedElement"></div>
+
+    <script>
+        var position = 0; // Initial position of the animated element
+        var speed = 5; // Speed of the animation (pixels per interval)
+        var direction = 1; // Direction of the animation (+1 for right, -1 for left)
+
+        var animatedElement = document.getElementById('animatedElement');
+
+        // Define the animation function
+        function animate() {
+            // Update the position based on the direction and speed
+            position += speed * direction;
+
+            // Limit the animation within the window width
+            if (position >= window.innerWidth - 100) { // Subtract 100 to account for the width of the element
+                direction = -1; // Change direction when reaching the right edge
+            } else if (position <= 0) {
+                direction = 1; // Change direction when reaching the left edge
+            }
+
+            // Update the position of the animated element
+            animatedElement.style.left = position + 'px';
+        }
+
+        // Call the animate function every 50 milliseconds (20 frames per second)
+        var animationInterval = setInterval(animate, 50);
+    </script>
+</body>
+</html>

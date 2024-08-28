@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: darkgoldenrod;
+            border: 2px solid red;
+            margin: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100%;
+            
+            
+            
+        }
+        .head, .foot{
+            background-color: floralwhite;
+            border: 2px solid black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            
+        }
+        .main{
+            background-color: rgb(255, 0, 0);
+        
+        }
+        .abc{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header class="head " onclick="myFun()">
+        <h2>Sanwwar Hussain</h2>
+    </header>
+    <main class="main">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet natus voluptatem sequi repellendus tempore consequuntur modi, facilis possimus ratione sit animi. Repudiandae in distinctio officia. Aspernatur facilis modi sed nobis!
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, totam quisquam nihil obcaecati ut molestias? Sequi saepe maiores incidunt. Aliquam nemo consequatur animi, ratione reprehenderit officiis cupiditate culpa blanditiis, cum officia vero. Atque quibusdam ratione, sed nobis adipisci nemo voluptatem minus, est aspernatur reprehenderit ad ducimus eum distinctio alias delectus veniam fugit dolorum maxime dolorem facilis! Cupiditate provident, unde rerum dolores nihil in illo commodi beatae veniam natus voluptas ullam temporibus laborum iure non pariatur qui modi quaerat? Enim beatae voluptas asperiores aspernatur non iure fuga voluptatem totam molestiae voluptatum eligendi velit, illo consequuntur magnam quo reprehenderit. At, temporibus laboriosam.
+        </p>    </main>
+    <footer class="foot">
+        <h3>Thank you</h3>
+    </footer>
+    <script>
+
+        const head= document.querySelector(".head");
+        head.addEventListener('click',function(){
+           if(head.classList,contains('abc'))
+           {
+            head.classList.remove('abc');
+           }
+           else{
+            head.classList.add
+           }
+            
+        });
+        // const main= document.querySelector(".main");
+        // main.addEventListener('click',function(){
+        //     main.classList.toggle('main');
+
+        // });
+
+            
+
+
+
+    </script>
+</body>
+</html>

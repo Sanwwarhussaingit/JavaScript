@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let myDate = new Date()
+        // console.log(myDate.toString());
+        // console.log(myDate.toLocaleDateString());
+        // console.log(myDate.toLocaleString());
+        // console.log(myDate.toLocaleTimeString());
+
+        // console.log(typeof myDate);
+
+        // let myd = new Date("2023-01-23")
+        let myd = new Date("01-12-2023")
+        // console.log(myd.toLocaleString());
+
+        let timeStamp = Date.now()
+        // console.log(timeStamp);
+        // console.log(myd.getTime());
+        // console.log(Math.floor(Date.now()/1000));
+
+
+        let newDate =  new Date()
+        // console.log(newDate);
+        // console.log(newDate.getDay());
+        // console.log(newDate.getMonth()+1);
+
+        newDate.toLocaleString('default',{
+            weekday:"long",
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>

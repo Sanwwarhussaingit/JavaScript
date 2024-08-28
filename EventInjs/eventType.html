@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-self: center;
+        }
+        .btncontainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: firebrick;
+            border: 2px solid blueviolet;
+            height: 400px;
+            width: 400px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btncontainer">
+        <button id="myBtn">Click me</button>
+    </div>
+    
+</body>
+
+<script>
+    const button= document.getElementById('myBtn')
+
+    button.addEventListener('mouseup',function(){
+
+        alert("MouseOver")
+    },false)
+
+</script>
+</html>

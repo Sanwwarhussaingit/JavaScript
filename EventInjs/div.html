@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .second{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+        .third{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="second">
+            <div class="third">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="">
+    const first = document.querySelector(".first");
+    const second = document.querySelector(".second");
+    const third = document.querySelector(".third");
+    third.addEventListener("click",function(e)
+    {
+       window.document.write("Third");
+    })
+</script>
+
+</html>

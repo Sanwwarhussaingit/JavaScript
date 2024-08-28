@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="trg" style="height: 100px; width: 200px; border: 2px solid;">
+        <p>Hi my Name is something</p>
+    </div>
+</body>
+<script>
+    const targetclass= document.querySelector('.trg');
+    targetclass.addEventListener('click', function(event){
+        console.log(event.target);
+        console.log(event.type);
+        console.log(event.pageX,event.pageY);
+    });
+
+
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+// let promise = new Promise((resolve1,reject)=>{
+//     console.log("I am a promise");
+//     // console.log(promise);
+//     // resolve1(123);      
+//     reject("Some error");
+
+// })
+    function getData(data)
+    {
+        return new Promise(function(r1,r2)
+        {
+            setTimeout(function(){
+                // console.log(data);
+                // r1("Success");
+                r2("error");
+                if(getData)
+                {
+                    getData();
+                }
+            },4000)
+
+        })
+    }
+    </script>
+</body>
+</html>

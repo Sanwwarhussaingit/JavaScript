@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          display: flex;
+          align-items: center;
+          justify-content:center;
+          background-color: cadetblue;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+            width: 400px;
+            height: 400px;
+        }li{
+            list-style:none;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+
+            <li>
+                <h2>I will check cookies in Your browser</h2>
+            </li>
+
+            <li>
+            <label for="name">Name</label>
+            <input type="text" name="" id="name" placeholder="Enter name">
+            </li>
+
+            <li>
+            <label for="password">password</label>
+            <input type="text" name="" id="password" placeholder="Enter password">
+            </li>
+            <li>
+                <input type="submit" id="btn">
+            </li>
+        </form>
+    </div>
+
+
+    
+</body>
+<script>
+
+    const btn = document.querySelector("#btn");
+    const name = document.querySelector("#name");
+    const password = document.querySelector("#password")
+    btn.addEventListener("click",function(){
+        let n= document.cookie =`Name=${name.value}`
+        let p= document.cookie =`Password=${password.value}`
+    })
+    
+
+  
+
+</script>
+</html>
